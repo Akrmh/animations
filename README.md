@@ -35,8 +35,6 @@ The grid is styled to display content neatly and provides a beautiful user exper
 
 ## Demo
 
-### Screenshot
-![Animated Grid Screenshot](https://via.placeholder.com/800x400?text=Animated+Grid+Project)
 
 ### Live Demo
 [Check it out here!](https://your-demo-link.com)
