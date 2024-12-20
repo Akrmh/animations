@@ -1,0 +1,83 @@
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      height: 100px;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 5s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3) {
+      animation: fadeIn 6s ease infinite, colorChangeRow1 1.5s ease-in-out infinite;
+      animation-delay: 0s;
+    }
+
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6) {
+      animation: fadeIn 6s ease infinite, colorChangeRow1 1.5s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+
+    .grid-item:nth-child(7),
+    .grid-item:nth-child(8),
+    .grid-item:nth-child(9) {
+      animation: fadeIn 6s ease infinite, colorChangeRow1 1.5s ease-in-out infinite;
+      animation-delay: 2s;
+    }
+
+    .grid-item:nth-child(10),
+    .grid-item:nth-child(11),
+    .grid-item:nth-child(12) {
+      animation: fadeIn 6s ease infinite, colorChangeRow1 1.5s ease-in-out infinite;
+      animation-delay: 3s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes colorChangeRow1 {
+      0%, 100% {
+        background-color: #fff;
+      }
+      50% {
+        background-color: #ff6f61;
+      }
+    }
+
+   
